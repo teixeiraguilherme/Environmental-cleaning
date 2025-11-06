@@ -1,12 +1,12 @@
-<h2>Environmental Cleaning</h2>
+<h2>🗑️ Environmental Cleaning</h2>
 
 Um jogo casual, rápido e viciante sobre reciclagem, onde seu principal inimigo é a gravidade!
 
 ## 🌊 Sobre o Jogo
 
-Em **[Nome do Jogo]**, sua missão é salvar o rio local de uma chuva de lixo. Itens recicláveis (e às vezes itens estranhos!) estão caindo da tela, e você é a única coisa que impede que eles caiam na água e poluam o meio ambiente.
+Em **Environmental Cleaning**, sua missão é salvar o rio local de uma chuva de lixo. Itens recicláveis (e às vezes itens estranhos!) estão caindo da tela, e você é a única coisa que impede que eles caiam na água e poluam o meio ambiente.
 
-Seu objetivo é garantir que cada pedaço de lixo caia na lixeira correta de reciclagem (Plástico, Papel, Vidro, etc.) antes que seja tarde demais.
+Seu objetivo é garantir que cada pedaço de lixo caia na lixeira de reciclagem antes que seja tarde demais.
 
 ## ⚙️ Como Jogar
 
