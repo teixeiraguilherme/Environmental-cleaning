@@ -11,6 +11,12 @@ Seu objetivo é garantir que cada pedaço de lixo caia na lixeira de reciclagem 
 ## ⚙️ Como Jogar
 
 * **Observe o Lixo:** Itens diferentes caem do topo da tela.
+<<<<<<< HEAD
 * **Recicle Corretamente:** Recolha cada item para sua lixeira para ganhar pontos.
 * **Não Polua!:** Se você errar a lixeira ou deixar o item cair no rio, o nível de poluição do rio aumenta.
+=======
+* **Recicle Corretamente:** Recolha cada item para sua lixeira correspondente para ganhar pontos.
+* **Não Polua!:** Se você errar a lixeira ou deixar o item cair no rio, o nível de poluição do rio aumenta.
+
+>>>>>>> 9935deeb0d7d780c06c6b5143d2344c8897464d3
 O jogo fica progressivamente mais rápido e caótico a cada nível. Desafie seus reflexos, salve o rio e tente bater seu recorde de pontuação!
