@@ -37,7 +37,7 @@ class Main:
             self.game.change_scene = False
             self.gameover.change_scene = False
             self.winner.change_scene = False
-            self.game.player.vida = 20
+            self.game.player.vida = 5
             self.game.player.pts = 0
             self.game.scene_type = None
 

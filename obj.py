@@ -40,7 +40,7 @@ class Player(Obj):
         self.sound_pts = pygame.mixer.Sound("assets/som/pontos.mp3")
         self.sound_dano = pygame.mixer.Sound("assets/som/dano.mp3")
 
-        self.vida = 20
+        self.vida = 5
         self.pts = 0
 
     def move_player(self, event):
@@ -58,9 +58,8 @@ class Player(Obj):
     def colisao_dano(self, group):
         colisao = pygame.sprite.spritecollide(self.sprite, group, True)
         if colisao:
-            self.pts -= 1           
+            self.vida -= 1          
             self.sound_dano.play()
-
 
 class Texto:
     def __init__(self, size, text):

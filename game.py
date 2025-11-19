@@ -57,44 +57,37 @@ class Game:
 
     def move_peixe_um(self):
         if not self.peixe_um.group:
-            self.peixe_um = Obj("assets/png/peixe_um.png", random.randrange(0, 330), -50)
+            self.peixe_um = Obj("assets/png/peixe1.png", random.randrange(0, 330), -50)
         else:
             self.peixe_um.sprite.rect[1] += 8
             if self.peixe_um.sprite.rect[1] >= 700:
                 self.peixe_um.sprite.kill()
-                self.peixe_um = Obj("assets/png/peixe_um.png", random.randrange(0, 330), -50)
+                self.peixe_um = Obj("assets/png/peixe1.png", random.randrange(0, 330), -50)
 
     def move_peixe_dois(self):
         if not self.peixe_dois.group:
-            self.peixe_dois = Obj("assets/png/peixe_dois.png", random.randrange(0, 330), -50)
+            self.peixe_dois = Obj("assets/png/peixe2.png", random.randrange(0, 330), -50)
         else:
             self.peixe_dois.sprite.rect[1] += 8
             if self.peixe_dois.sprite.rect[1] >= 700:
                 self.peixe_dois.sprite.kill()
-                self.peixe_dois = Obj("assets/png/peixe_dois.png", random.randrange(0, 330), -50)
+                self.peixe_dois = Obj("assets/png/peixe2.png", random.randrange(0, 330), -50)
 
     def move_maca(self):
-        # Primeiro, checa se o grupo da maçã está vazio (foi coletada)
         if not self.maca.group:
-            # Se sim, cria uma nova maçã no topo
             self.maca = Obj("assets/png/maca.png", random.randrange(150, 330), -50)
         else:
-            # Se não, o objeto ainda existe. Movemos ele.
             self.maca.sprite.rect[1] += 8
-            # E checamos se ele saiu da tela (foi perdido)
             if self.maca.sprite.rect[1] >= 700:
                 self.player.vida -= 1
                 self.player.sound_dano.play()
                 self.maca.sprite.kill()
-                # Cria uma nova maçã no topo
                 self.maca = Obj("assets/png/maca.png", random.randrange(150, 330), -50)
 
     def move_vidro(self):
-        # Checa se foi coletado
         if not self.vidro.group:
             self.vidro = Obj("assets/png/vidro.png", random.randrange(150, 330), -50)
         else:
-            # Move e checa se foi perdido
             self.vidro.sprite.rect[1] += 8
             if self.vidro.sprite.rect[1] >= 700:
                 self.player.vida -= 1
@@ -103,11 +96,9 @@ class Game:
                 self.vidro = Obj("assets/png/vidro.png", random.randrange(150, 330), -50)
 
     def move_garrafa(self):
-        # Checa se foi coletado
         if not self.garrafa.group:
             self.garrafa = Obj("assets/png/garrafa.png", random.randrange(0, 330), -50)
         else:
-            # Move e checa se foi perdido
             self.garrafa.sprite.rect[1] += 8
             if self.garrafa.sprite.rect[1] >= 700:
                 self.player.vida -= 1
@@ -116,11 +107,9 @@ class Game:
                 self.garrafa = Obj("assets/png/garrafa.png", random.randrange(0, 330), -50)
 
     def move_metal(self):
-        # Checa se foi coletado
         if not self.metal.group:
             self.metal = Obj("assets/png/metal.png", random.randrange(0, 330), -50)
         else:
-            # Move e checa se foi perdido
             self.metal.sprite.rect[1] += 8
             if self.metal.sprite.rect[1] >= 700:
                 self.player.vida -= 1
