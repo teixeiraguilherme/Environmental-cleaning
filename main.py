@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import pygame
 from menu import Menu, Gameover, Vitoria
 from game import Game
@@ -64,4 +65,3 @@ class Main:
 
 game = Main(400, 566, "Environmental cleaning")
 game.update()
-
