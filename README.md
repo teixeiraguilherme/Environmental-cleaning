@@ -28,9 +28,9 @@ O jogo possui um sistema de progressão dividido em três estágios:
 
 | Nível | Meta (Pts) | Velocidade | Obstáculos (Peixes) | Detalhes |
 | :--- | :---: | :---: | :---: | :--- |
-| **🟢 Easy** | 15 | Baixa | Nenhum | Ideal para aprender a mecânica. |
-| **🟡 Medium** | 30 | Média | 1 Tipo | Aparece um peixe para atrapalhar. |
-| **🔴 Hard** | 50 | Alta | 2 Tipos | Dois peixes e maior velocidade |
+| **🟢 Easy** | 20 | Baixa | Nenhum | Ideal para aprender a mecânica. |
+| **🟡 Medium** | 40 | Média | 1 Tipo | Aparece um peixe para atrapalhar. |
+| **🔴 Hard** | 60 | Alta | 2 Tipos | Dois peixes e maior velocidade |
 
 ---
 
