@@ -1,5 +1,5 @@
 import pygame
-from menu import Menu, Gameover, Vitoria
+from menu import Menu, Gameover, Vitoria, Level
 from game import Game
 
 class Main:
@@ -18,6 +18,7 @@ class Main:
         self.game = Game()
         self.gameover = Gameover("assets/png/gameover.png")
         self.winner = Vitoria("assets/png/win.png")
+        self.level = Level("assets/png/level.png")
 
         self.loop = True
         self.fps = pygame.time.Clock()
@@ -25,7 +26,9 @@ class Main:
     def draw(self):
         if not self.menu.change_scene:
             self.menu.draw(self.window)
-        elif not self.game.change_scene:
+        elif not self.level.change_scene:
+            self.level.draw(self.window)
+        elif self.game is not None and not self.game.change_scene:
             self.game.draw(self.window)
             self.game.update()
         elif self.game.scene_type == "gameover" and not self.gameover.change_scene:
@@ -35,6 +38,7 @@ class Main:
         else:
             self.menu.change_scene = False
             self.game.change_scene = False
+            self.level.change_scene = False
             self.gameover.change_scene = False
             self.winner.change_scene = False
             self.game.player.vida = 5
@@ -47,7 +51,12 @@ class Main:
                 self.loop = False
             if not self.menu.change_scene:
                 self.menu.events(events)
-            elif not self.game.change_scene:
+            elif not self.level.change_scene:
+                self.level.events(events)
+                if self.level.change_scene:
+                    level_escolhido = self.level.escolha
+                    self.game = Game(level_escolhido)
+            elif self.game is not None and not self.game.change_scene:
                 self.game.player.move_player(events)
             elif not self.winner.change_scene:
                 self.winner.events(events)
