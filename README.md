@@ -54,7 +54,7 @@ O jogo possui um sistema de progressão dividido em três estágios:
 Race for Approval/
 │
 ├── assets/
-│   └── pngg/
+│   └── png/
 │     ├── background.png
 │     ├── garrafa.png
 │     ├── lixeira.png
