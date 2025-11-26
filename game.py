@@ -8,13 +8,13 @@ class Game:
         self.bg = Obj("assets/png/background.png", 0, 0)
         self.level = level
         if level == "easy":
-            self.velocidade = 6
+            self.velocidade = 7
             self.meta_pontos = 20
             self.tem_peixe_um = False
             self.tem_peixe_dois = False
 
         if level == "medium":
-            self.velocidade = 7
+            self.velocidade = 8
             self.meta_pontos = 40
             self.tem_peixe_um = True
             self.tem_peixe_dois= False
@@ -39,8 +39,8 @@ class Game:
         self.change_scene = False
         self.scene_type = None
 
-        self.score = Texto(120, "0")
-        self.vidas = Texto(60, "5")
+        self.score = Texto(110, "0")
+        self.vidas = Texto(50, "5")
 
     def draw(self, window):
         self.bg.drawing(window)

@@ -12,23 +12,8 @@ class Obj:
         self.sprite.rect[0] = x
         self.sprite.rect[1] = y
 
-        self.frame = 1
-        self.tick = 0
-
     def drawing(self,window):
         self.group.draw(window)
-
-    def anima(self, image, tick, frames):
-        self.tick += 1
-        
-        if self.tick >= tick:
-            self.tick = 0
-            self.frame += 1
-
-        if self.frame > frames:
-            self.frame = 1
-
-        self.sprite.image = pygame.image.load("assets/" + image + str(self.frame) + ".png")
 
 
 class Player(Obj):
@@ -63,7 +48,7 @@ class Player(Obj):
 
 class Texto:
     def __init__(self, size, text):
-        self.font = pygame.font.SysFont("Press Start 2P", size)
+        self.font = pygame.font.Font("assets/font/pixel_operator.ttf", size)
         self.render = self.font.render(text, False, (255, 255, 255))
 
     def draw(self, window, x, y):

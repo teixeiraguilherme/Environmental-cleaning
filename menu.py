@@ -36,7 +36,6 @@ class Level(Menu):
     def events(self, event):
         if event.type == pygame.MOUSEBUTTONDOWN:
             pos_mouse= pygame.mouse.get_pos()
-            print (f"A posição do mouse é: {pos_mouse}")
             
             if self.btn_easy.collidepoint(pos_mouse):
                 self.escolha = "easy"
