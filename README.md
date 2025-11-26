@@ -51,7 +51,7 @@ O jogo possui um sistema de progressão dividido em três estágios:
 ## 📁 Estrutura de Pastas
 
 ```
-Race for Approval/
+Environmental-cleaning/
 │
 ├── assets/
 │   └── png/
@@ -67,11 +67,14 @@ Race for Approval/
 │     ├── papel.png
 │     ├── menu.png
 │     ├── gameover.png
+│     ├── gameplay.png
 │     └── win.png
-│   └── Sons/
+│   └── som/
 │     ├── musica.mp3
 │     ├── pontos.mp3
 │     └── dano.mp3
+│   └── font/
+│     └── pixel_operator.ttf
 │
 ├── game.py
 ├── main.py
