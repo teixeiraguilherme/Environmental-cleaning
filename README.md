@@ -31,6 +31,7 @@ O jogo possui um sistema de progressão dividido em três estágios:
 | **🟢 Easy** | 20 | Baixa | Nenhum | Ideal para aprender a mecânica. |
 | **🟡 Medium** | 40 | Média | 1 Tipo | Aparece um peixe para atrapalhar. |
 | **🔴 Hard** | 60 | Alta | 2 Tipos | Dois peixes e maior velocidade |
+| **🔵 Free** | ♾️ | Alta | 2 Tipos | Modo livre e competidor |
 
 ---
 
@@ -66,6 +67,9 @@ Environmental-cleaning/
 │     ├── vidro.png
 │     ├── papel.png
 │     ├── menu.png
+│     ├── name.png
+│     ├── ranking.png
+│     ├── score.png
 │     ├── gameover.png
 │     ├── gameplay.png
 │     └── win.png
@@ -80,6 +84,10 @@ Environmental-cleaning/
 ├── main.py
 ├── menu.py
 ├── obj.py
+├── obj.py
+├── ranking.json
+├── ranking.py
+├── .gitignore
 └── README.md
 ```
 ## Bibliotecas usadas:
