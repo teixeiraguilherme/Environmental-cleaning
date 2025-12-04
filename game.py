@@ -3,10 +3,12 @@ import random
 
 class Game:
 
-    def __init__(self, level = "easy"):
+    def __init__(self, level = "easy", player_name=None):
         
         self.bg = Obj("assets/png/background.png", 0, 0)
         self.level = level
+        self.player_name = player_name
+
         if level == "easy":
             self.velocidade = 7
             self.meta_pontos = 20
@@ -20,8 +22,14 @@ class Game:
             self.tem_peixe_dois= False
         
         if level == "hard":
-            self.velocidade = 9.5
+            self.velocidade = 9.0
             self.meta_pontos = 60
+            self.tem_peixe_um = True
+            self.tem_peixe_dois = True
+
+        if level == "free":
+            self.velocidade = 9.0
+            self.meta_pontos = float('inf')
             self.tem_peixe_um = True
             self.tem_peixe_dois = True
 
@@ -39,8 +47,8 @@ class Game:
         self.change_scene = False
         self.scene_type = None
 
-        self.score = Texto(110, "0")
-        self.vidas = Texto(50, "5")
+        self.score = Texto(110, "0", (255,255,255))
+        self.vidas = Texto(50, "5", (255,255,255))
 
     def draw(self, window):
         self.bg.drawing(window)

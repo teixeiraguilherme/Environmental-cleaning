@@ -1,5 +1,11 @@
 import pygame
 
+
+def collide_hitbox_small(s1, s2):
+    hitbox_s1 = s1.rect.inflate(-20, -20)
+    return hitbox_s1.colliderect(s2.rect)
+
+
 class Obj:
 
     def __init__(self, image, x, y):
@@ -35,24 +41,25 @@ class Player(Obj):
 
 
     def colisao(self, group):
-        colisao = pygame.sprite.spritecollide(self.sprite, group, True)
+        colisao = pygame.sprite.spritecollide(self.sprite, group, True, collided = collide_hitbox_small)
         if colisao:
             self.pts += 1          
             self.sound_pts.play()
 
     def colisao_dano(self, group):
-        colisao = pygame.sprite.spritecollide(self.sprite, group, True)
+        colisao = pygame.sprite.spritecollide(self.sprite, group, True, collided = collide_hitbox_small)
         if colisao:
             self.vida -= 1          
             self.sound_dano.play()
 
 class Texto:
-    def __init__(self, size, text):
+    def __init__(self, size, text, color=(0, 0, 0)):
         self.font = pygame.font.Font("assets/font/pixel_operator.ttf", size)
-        self.render = self.font.render(text, False, (255, 255, 255))
+        self.color = color
+        self.render = self.font.render(text, False, self.color)
 
     def draw(self, window, x, y):
         window.blit(self.render, (x, y))
 
     def update_texto(self, text):
-        self.render = self.font.render(text, False, (255, 255, 255))
+        self.render = self.font.render(text, False, self.color)
