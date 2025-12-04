@@ -14,8 +14,8 @@
 
 ## ⚙️ Funcionalidades do Jogo
 
-- **Sistema de Níveis**: Três dificuldades distintas (Easy, Medium, Hard) que alteram a velocidade e os desafios.
-- **Mecânica de Coleta**: Pegue Vidro, Papel, Metal, Maçã e Garrafas para pontuar.
+- **Sistema de Níveis**: Três dificuldades distintas (Easy, Medium, Hard, Free) que alteram a velocidade e os desafios.
+- **Mecânica de Coleta**: Pegue Vidro, Papel, Metal, Maçã e Garrafas para pontuar e não perder vida.
 - **Obstáculos Dinâmicos**: Evite os peixes que aparecem nos níveis mais difíceis!
 - **Controle via Mouse**: Jogabilidade fluida onde a lixeira segue o cursor.
 - **Feedback Sonoro**: Efeitos de áudio para coleta de itens e danos.
